@@ -119,3 +119,84 @@ function rockPaperScissors(input1,input2){
     }
 }
 // not best practice especially as should not let a single line run on for so long
+
+/*-----
+Daily codewars Dec 19
+-----*/
+
+//Surface Area and Volume of a Box
+
+function getSizes(a,b,c){
+    let area = 2 * (a * b + a * c + b * c) 
+    let volume = a * b * c
+    return Array(area, volume)
+}
+
+//Total amount of points
+
+function getPoints(arr){
+    let points = 0;
+    arr.forEach( e => {
+        if(e.charAt(0) > e.charAt(2)){
+            points += 3;
+        }else if(e.charAt(0) == e.charAt(2)){
+            points += 1;
+        }
+    });
+    return points
+};
+
+console.log(getPoints(['3:2','2:2','0:1']))
+
+//Remove exclamation marks
+
+function removeExclamationMarks(str){
+    return str.replace(/!/g, '')
+}
+
+//Quarter of the year
+
+function whichQuarterOfYear(month){
+    switch(month){
+        case 1:
+        case 2:
+        case 3:
+            return 1
+        break;
+        case 4:
+        case 5:
+        case 6:
+            return 2
+        break;
+        case 7:
+        case 8:
+        case 9:
+            return 3
+        break;
+        case 10:
+        case 11:
+        case 12:
+            return 4
+        break;
+    }
+};
+//alt can use const whichQuarter = m => Math.ciel(m/3)
+
+//Grasshopper - Grade book
+
+function avgGrade(score1,score2,score3){
+    let avg = (score1 + score2 + score3) / 3;
+    return avg < 60 ? 'F' : avg < 70 ? 'D' : avg < 80 ? 'C' : avg < 90 ? 'B' : 'A'
+}
+
+// Area or Perimeter
+
+function squareOrRectangle(l,w){
+    return l == w ? l * w : 2 * (l + w)
+}
+
+//Sum mixed array
+
+function sumArray(arr){
+    return arr.reduce((acc, c) => acc + +c, 0)
+}
