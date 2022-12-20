@@ -1,6 +1,6 @@
-/*-----
+/*---------------------------
 Daily codewars Dec 17
------*/
+---------------------------*/
 
 
 // How good are you really
@@ -60,9 +60,9 @@ let stringToArray = (str) => str.split(' ');
 
 console.log(stringToArray("my name is not string"))
 
-/*-----
+/*---------------------------
 Daily codewars Dec 18
------*/
+---------------------------*/
 
 //Count by X
 function multiplesOfANumber(x,n){
@@ -120,9 +120,9 @@ function rockPaperScissors(input1,input2){
 }
 // not best practice especially as should not let a single line run on for so long
 
-/*-----
+/*---------------------------
 Daily codewars Dec 19
------*/
+---------------------------*/
 
 //Surface Area and Volume of a Box
 
@@ -200,3 +200,67 @@ function squareOrRectangle(l,w){
 function sumArray(arr){
     return arr.reduce((acc, c) => acc + +c, 0)
 }
+
+/*---------------------------
+Daily codewars Dec 20
+---------------------------*/
+
+//Third angle of a triangle
+const thirdAngle = (a,b) => 180 - (a + b)
+
+// Thinkful - Logic Drills: Traffic lightt
+function nextLight(light){
+    return light == 'green' ? 'yellow' : light == 'yellow' ? 'red' : 'green'
+}
+
+//Training on Sum without highest and lowest number
+
+function sumNotHighestLowest(input){
+    if(input == false || input ==null || input.length < 3 || input == []){
+        return 0;
+    } else {
+        let sorted = input.sort((a,b) => a-b)
+        let filtered = sorted.filter((e,i) =>(i != 0 && i != input.length -1));
+        return filtered.reduce((acc,c) => acc +c);
+    }
+};
+
+//L1: Set alarm
+function setAlarm(employed, vacation){
+    return employed && !vacation
+}
+
+//Array plus array
+
+function arrayPlusArray(arr1,arr2){
+    return arr1.reduce((acc,c) => acc+c) + arr2.reduce((acc,c) => acc+c)
+}
+//can also use return arr1.concat(arr2).reduce ....
+
+//Double char
+function repeat(str){
+    let doubleString = [];
+    str.split("").forEach(e => doubleString.push(e,e))
+    return doubleString.join('')
+    };
+
+console.log(repeat('Hello I Am Soooom!!'))
+
+//remember use .map(e => e + e) instead of forEach!
+//also silly regexp: str.replace(/(.)/g,"$1$1")
+
+//Beginner Series#4 Cockroach
+
+function cockroachSpeed(s) {
+    return Math.floor(s *1000/36)
+}
+
+//The feast of many beasts
+
+function feast(beast,dish){
+   return (beast.charAt(0) == dish.charAt(0) && beast.charAt(beast.length-1) == dish.charAt(dish.length-1))      
+}
+
+/*---------------------------
+Daily codewars Dec 21
+---------------------------*/
