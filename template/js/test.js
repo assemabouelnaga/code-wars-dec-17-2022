@@ -264,3 +264,78 @@ function feast(beast,dish){
 /*---------------------------
 Daily codewars Dec 21
 ---------------------------*/
+
+//Parse nice int from char problem
+
+function getAge(inputString){
+    return parseInt(inputString.charAt(0))
+  }
+//ffind the first non-consecutive number
+
+function firstNonConsecutive (arr) {
+    for (let i=0; i <= arr.length; i++){
+        if(arr[i] +1 == arr[i+1]) continue;
+
+        if(arr == null || arr.length < 2){
+            return null
+        }else if(arr[i] +1 !== arr[i+1]){
+            return arr[i+1]
+       }else{
+            return null
+       }
+    }
+}
+// needs refactoring for fully consecutive arrays *****
+
+
+// Twice as old
+
+function twiceAsOld(age1,age2){
+    for(let i=0; i < 75; i++){
+     if(age1 == age2 /2){return i}
+         ++age1;
+         ++age2;
+    }
+}
+
+//refactor b/c only accounts for time in future not past****
+
+
+// Switch it up
+
+function switchItUp(number){
+    switch(number){
+          case 0: return 'Zero';
+              break;
+          case 1: return 'One';
+              break;
+          case 2: return 'Two';
+              break;
+          case 3: return 'Three';
+              break;
+          case 4: return 'Four';
+              break;
+          case 5: return 'Five';
+              break;
+          case 6: return 'Six';
+              break;
+          case 7: return 'Seven';
+              break;
+          case 8: return 'Eight';
+              break;
+          case 9: return 'Nine';
+              break;
+      }
+}
+//Will there be enough space
+ 
+function enough(cap, on, wait) {
+    return (cap - on - wait) >= 0 ? 0 : Math.abs(cap - on - wait)
+}
+// or return (on + wait < cap) ? on + wait - cap : 0
+// or can use Math.max(wait + on - cap, 0)
+
+
+/*---------------------------
+Daily codewars Dec 22
+---------------------------*/
