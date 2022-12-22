@@ -339,3 +339,42 @@ function enough(cap, on, wait) {
 /*---------------------------
 Daily codewars Dec 22
 ---------------------------*/
+
+//grasshopper- check for factor
+
+function checkFactor(base,factor){
+    return base % factor == 0;
+}
+
+//keep up the hoop
+const hoopCount = n => n < 10 ? 'Keep at it until you get it' : 'Great, now move on to tricks';
+
+//removing elements
+
+function removingElements(arr){
+    return arr.filter((e,i) => i % 2 != 0)
+}
+
+//Grasshopper - debug sayHello
+
+function sayHello(name){
+    return `Hello, ${name}`
+}
+
+// function 2 =squaring an arguement
+
+const square = num => Math.pow(num,2)
+
+// is the string uppcase?
+
+String.prototype.isUpperCase = function(str) {
+    return String(this) == this.toUpperCase()
+}
+// left hand side would be object hence use double equal. 
+//this regex worked only for all caps input... return str.replace(/ /g,'') == str.match(/[A-Z]/g).join('')
+
+
+
+/*---------------------------
+Daily codewars Dec 23
+---------------------------*/
