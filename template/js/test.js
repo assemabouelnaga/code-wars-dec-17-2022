@@ -374,7 +374,54 @@ String.prototype.isUpperCase = function(str) {
 //this regex worked only for all caps input... return str.replace(/ /g,'') == str.match(/[A-Z]/g).join('')
 
 
-
 /*---------------------------
 Daily codewars Dec 23
+---------------------------*/
+
+
+//Is it even?
+
+function testEven(n) {
+    return n % 2 == 0
+}
+
+// Powers of 2
+
+function powersOfTwo(n){
+    if(n == 0){
+      return [1]
+    }
+    else{
+      let x = n +1 ;
+      return Array(x).fill(n).map((e,i) => Math.pow(2,i))
+    }
+  }
+
+// What is between?
+
+function between(a, b, length = (b-a+1)) {
+    return Array.from({length}, () => a++)
+}
+
+// Correct the mistakes of the character recognition softwar
+function correct(string){
+	return string.replace(/0/g,'O').replace(/5/g,'S').replace(/1/g,'I')
+}
+
+// Student's final grade
+
+function finalGrade(exam, projects){
+    if(exam > 90 || projects > 10){
+        return 100
+    }else if(exam > 75 && projects >= 5){
+        return 90
+    }else if(exam > 50 && projects >= 2){
+        return 75
+    }
+    return 0
+}
+
+
+/*---------------------------
+Daily codewars Dec 24
 ---------------------------*/
