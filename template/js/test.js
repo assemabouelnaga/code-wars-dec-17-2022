@@ -425,3 +425,84 @@ function finalGrade(exam, projects){
 /*---------------------------
 Daily codewars Dec 24
 ---------------------------*/
+
+//I love you, a little, a lot, passionately... not at all
+
+function howMuchILoveYou(nbPetals){
+    let remains = nbPetals % 6;
+    let loveArr = [
+        'I love you',
+        'a little',
+        'a lot',
+        'passionately',
+        'madly',
+        'not at all'
+    ]
+  if(nbPetals == 1 || remains == 1){
+    return loveArr[0]
+  }else if(nbPetals == 2 || remains == 2){
+    return loveArr[1]
+  }else if(nbPetals == 3 || remains == 3){
+    return loveArr[2]
+  }else if(nbPetals == 4 || remains == 4){
+    return loveArr[3]
+  }else if(nbPetals == 5 || remains == 5){
+    return loveArr[4]
+  }else if(nbPetals == 6 || remains == 0){
+    return loveArr[5]
+  }
+}
+
+// can do without nbPetals because 3 % 6 is also 3
+
+
+//Is it a palindrome?
+
+function isPalindrome(x) {
+    return x.toLowerCase() == x.split('').reverse().join('').toLowerCase()
+}
+
+//Welcome!
+
+function greetMe(language){
+    let languageGreetings = {
+            english: 'Welcome',
+            czech: 'Vitejte',
+            danish: 'Velkomst',
+            dutch: 'Welkom',
+            estonian: 'Tere tulemast',
+            finnish: 'Tervetuloa',
+            flemish: 'Welgekomen',
+            french: 'Bienvenue',
+            german: 'Willkommen',
+            irish: 'Failte',
+            italian: 'Benvenuto',
+            latvian: 'Gaidits',
+            lithuanian: 'Laukiamas',
+            polish: 'Witamy',
+            spanish: 'Bienvenido',
+            swedish: 'Valkommen',
+            welsh: 'Croeso'
+    };
+    if(!language || language in languageGreetings == false){
+        return languageGreetings.english
+    } else {
+        return languageGreetings[language]
+    }
+}
+
+// Sum the strings
+
+function sumStr(a,b) {
+    return String(+a + +b)
+}
+
+//Regular Ball Super Ball
+
+let Ball = function(ballType ='regular') {
+    this.ballType = ballType
+};
+
+/*---------------------------
+Daily codewars Dec 24
+---------------------------*/
