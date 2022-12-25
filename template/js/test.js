@@ -504,5 +504,74 @@ let Ball = function(ballType ='regular') {
 };
 
 /*---------------------------
-Daily codewars Dec 24
+Daily codewars Dec 25
+---------------------------*/
+
+// N-th Power
+
+function nPower(array,num){
+    return Math.pow(array[num],num) || -1
+}
+
+// Reverse List order
+
+function reverseList(list){
+    return list.reverse()
+}
+
+// How many lightsabers do you own?
+
+function sabersOwned(name){
+    return name != 'Zach' ? 0 : 18
+}
+
+// Filling an array(part1)
+
+const fillArr = (N = 0) => Array(N).fill(0).map((e,i) => e = N -(N-i));
+
+//Filter out the geese
+
+function gooseFilter (bird) {
+    let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+    return bird.filter(birds => birds != geese[0] && birds != geese[1] &&  birds != geese[2] && birds != geese[3] && birds != geese[4])
+}
+/* The above wouldnt work well for long arrays so use one of:
+.filter(b => !geese.includes(b)) or .filter(b => geese.indexOf(b) == -1) */
+
+// Find the first non-consecutive number
+
+function firstNonConsecutive(arr) {
+    if(arr == null || arr.length < 2){
+        return null
+    }
+    let sum1 = arr.reduce((a,b) => a+b)
+    let sum2 = Array(arr.length).fill(arr[0]).map((e,i) => arr[0]++).reduce((a,b) => a+b)
+    
+    if(sum1 == sum2){
+        return null
+    }
+    for(let j = 1; j <= arr.length; j++){
+        arr[0]--
+    }
+    for(let i =0; i < arr.length; i++){
+        if(arr[i] +1 != arr[i+1]){
+            return arr[i+1]
+        }
+    }
+}
+/* why did i overly complicate this? everything above the last for loop simplifies to
+else {return null}
+
+can also do
+
+function firstNonConsecutive (arr) {
+    let result = arr.find((val, index) => val !== index + arr[0]);
+
+    return (Number.isInteger(result)) ? result : null;
+}
+
+and
+
+/*---------------------------
+Daily codewars Dec 26
 ---------------------------*/
