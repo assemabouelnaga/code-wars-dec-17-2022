@@ -570,8 +570,46 @@ function firstNonConsecutive (arr) {
     return (Number.isInteger(result)) ? result : null;
 }
 
-and
+
 
 /*---------------------------
 Daily codewars Dec 26
+---------------------------*/
+
+// Whats the real floor?
+
+const getRealFloor = n =>  n > 13 ? n - 2 : n > 0 ? n - 1 : n;
+
+
+// Well of Ideas - easy versuib
+function well(x){
+    return x.filter(e => e.length == 4).length > 2 ? 'I smell a series!' : 
+    x.filter(e => e.length == 4).length > 0 ? 'Publish!' : 'Fail!'
+}
+
+// Drink About
+
+function peopleWithAgeDrink(old) {
+    return 'drink ' + (old >= 21 ? 'whisky' : old >= 18 ? 'beer' : old >= 14 ? 'coke' : 'toddy')
+};
+
+//Find multiples of a Number
+
+function findMultiples(n1,n2){
+    let newArr = []
+    for(let i = n1; i <= n2; i++){
+        if(i % n1 ==0){
+            newArr.push(i)
+        }
+    }
+}
+
+// Vowel remover
+
+function vowelRemover(str){
+    return str.replaceAll(/['a','e','i','o','u']/g,'')
+}
+
+/*---------------------------
+Daily codewars Dec 27
 ---------------------------*/
