@@ -613,3 +613,40 @@ function vowelRemover(str){
 /*---------------------------
 Daily codewars Dec 27
 ---------------------------*/
+
+//Grasshopper - terminal game move function
+
+function move (position, roll) {
+    return position + 2 * roll
+}
+
+//plural
+
+function plural(n) {
+    return n == 1 ? false : true
+}
+
+//name shuffler
+function nameShuffler(str){
+    return str.split(' ').reverse().join(' ')
+}
+
+// a wolf in sheep's clothing
+
+function warnTheSheep(queue) {
+    let wolfy = queue.length -1 - queue.indexOf('wolf')
+    return queue.indexOf('wolf') == queue.length -1 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${wolfy}! You are about to be eaten by a wolf!`
+}
+
+//the wide-mouthed frog!
+
+function mouthSize(animal) {
+    return animal.toLowerCase() == 'alligator' ? 'small' : 'wide'
+}
+
+
+/*---------------------------
+Daily codewars Dec 28
+---------------------------*/
+
+//do Training JS# ...
