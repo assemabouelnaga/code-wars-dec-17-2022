@@ -650,3 +650,19 @@ Daily codewars Dec 28
 ---------------------------*/
 
 //do Training JS# ...
+
+// JS #7 if... else and ternary operator
+
+function saleHotdogs(n){
+    return n * (n > 9 ? 90 : n > 4 ? 95 : 100)
+}
+
+//Training JS#5: Basic data types --Object
+function animal(obj){
+    return `This ${obj.color} ${obj.name} has ${obj.legs} legs.` 
+}
+
+
+/*---------------------------
+Daily codewars Dec 28
+---------------------------*/
