@@ -649,7 +649,7 @@ function mouthSize(animal) {
 Daily codewars Dec 28
 ---------------------------*/
 
-//do Training JS# ...
+
 
 // JS #7 if... else and ternary operator
 
@@ -664,5 +664,56 @@ function animal(obj){
 
 
 /*---------------------------
-Daily codewars Dec 28
+Daily codewars Dec 29
+---------------------------*/
+
+//Twice as old
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+    return Math.abs(dadYearsOld - 2 * sonYearsOld)
+}
+
+//Expressions matter
+
+function expressionsMatter(a,b,c){
+    return Math.max(a+b+c, (a+b)*c, a*(b+c), a*b*c)
+}
+
+//Cat years, Dog years
+
+function humanYearsCatYearsDogYears(humanYears){
+    let cat = 15 + (humanYears == 2 ? 9 : (9 + 4*(humanYears-2)));
+    let dog = 15 + (humanYears == 2 ? 9 : (9 + 5*(humanYears-2)));
+    return [humanYears,cat,dog]; 
+}
+
+//Difference of Volumes of Cuboids
+
+function findDifference(a,b){
+    return Math.abs(a.reduce((acc,c) => acc * c, 1) - b.reduce((acc,c) => acc * c, 1))
+}
+
+//All Star Code challenge #18
+
+function twoStrings(str1,str2){
+    return str1.replaceAll(str2,7).split('').filter(e => e == 7).length
+}
+
+//not necessary to do replace all can just filter (e => e== str2)
+
+//multiplaction table for number
+function multiTable(number) {
+    return `1 * ${number} = ${1*number}\n2 * ${number} = ${2*number}\n3 * ${number} = ${3*number}\n4 * ${number} = ${4*number}\n5 * ${number} = ${5*number}\n6 * ${number} = ${6*number}\n7 * ${number} = ${7*number}\n8 * ${number} = ${8*number}\n9 * ${number} = ${9*number}\n10 * ${number} = ${10*number}`
+  
+}
+//use a loop obviously
+
+//Exclusive "or" (xor) logical operator
+
+function xor(a, b) {
+    return a != b;
+  }
+
+/*---------------------------
+Daily codewars Dec 29
 ---------------------------*/
