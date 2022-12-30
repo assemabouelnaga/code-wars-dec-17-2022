@@ -706,7 +706,7 @@ function multiTable(number) {
     return `1 * ${number} = ${1*number}\n2 * ${number} = ${2*number}\n3 * ${number} = ${3*number}\n4 * ${number} = ${4*number}\n5 * ${number} = ${5*number}\n6 * ${number} = ${6*number}\n7 * ${number} = ${7*number}\n8 * ${number} = ${8*number}\n9 * ${number} = ${9*number}\n10 * ${number} = ${10*number}`
   
 }
-//use a loop obviously
+//use a loop obviously.. or objects or array even
 
 //Exclusive "or" (xor) logical operator
 
@@ -715,5 +715,57 @@ function xor(a, b) {
   }
 
 /*---------------------------
-Daily codewars Dec 29
+Daily codewars Dec 30
+---------------------------*/
+
+
+//merge two sorted arrays into one
+
+function mergeArrays(arr1,arr2){
+    let sorted = [].concat(arr1, arr2).sort((a,b) => a-b);
+    return sorted.filter((e,i) => sorted.indexOf(e) === i);
+}
+
+//Hello, Name or World!
+
+function helloNameOrWorld(name){
+    if(!name){name = 'world'}
+    let named = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+    return `Hello, ${named}!`
+}
+
+//Convert to binary
+
+function toBinary(num){
+    let total = num;
+    let anArr = []
+    do {
+        anArr.unshift(total % 2)
+        if(total %2 == 1){total = (total -1) / 2}else{total /=2}
+        console.log(total)
+    } while (total != 0);
+    return Number(anArr.join(''))
+}
+//apparently return +num.toString(2) works fine :)
+
+// Holiday VIII - duty free
+
+function cheers(normal,discount,holiday){
+    let huh = normal * (discount/100)
+    return Math.floor(holiday/huh)
+}
+
+//Lario and Muigi Pipe Problem
+
+function pipeDown(arr){
+    let newArr = []
+    for(let i = Math.min(...arr); i <= Math.max(...arr); i++){
+        newArr.push(i)
+    }
+    return newArr
+}
+
+
+/*---------------------------
+Daily codewars Dec 31
 ---------------------------*/
