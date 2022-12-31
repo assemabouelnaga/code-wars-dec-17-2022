@@ -769,3 +769,38 @@ function pipeDown(arr){
 /*---------------------------
 Daily codewars Dec 31
 ---------------------------*/
+
+// 5 Without numbers!!
+
+function return5(){
+    return 'hahah'.length
+}
+//Remove duplicates from list
+
+function distinct(a) {
+    return a.filter((e,i) => a.indexOf(e) == i)
+}
+
+//Or can use return [... new Set(a)]
+
+// Hex to decimal
+
+function hexToDecimal(hexString){
+    return parseInt(hexString, 16)
+}
+
+//The 'if' function
+
+function _if(bool,func1,func2){
+    return bool ? func1() : func2()
+}
+
+//Enumerable Magic #25 - take the first N elements
+
+function takeNElements(arr,n){
+    return arr.slice(0,n)
+}
+
+/*---------------------------
+Daily codewar Jan 1
+---------------------------*/
