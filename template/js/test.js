@@ -802,5 +802,44 @@ function takeNElements(arr,n){
 }
 
 /*---------------------------
-Daily codewar Jan 1
+Daily codewars Jan 1
+---------------------------*/
+
+//Grasshopper- function syntax debugging
+
+function main (verb, noun) {
+    return verb + noun
+}
+
+//Find the remainder
+
+function remainder(a, b){  
+    return Math.max(a,b) % Math.min(a,b) ;
+}
+
+//Super duper Easy
+
+function problem(x){
+    return typeof x == 'number' ? 50*x + 6 : "Error"
+}
+
+//101 Dalmatians - squash the bugs, not the dogs!
+
+function howManyDalmatians(number){
+  
+    let dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"];
+    
+    let respond = number <= 10 ? dogs[0] : number <= 50 ? dogs[1] : number == 101 ? dogs[3] : dogs[2]
+    
+    return respond
+}
+
+//Exclamation marks series #1: remove an exclamation mark from the end of string
+
+function exclamationRemover(string){
+    return string.replace(/!$/g,'')
+}
+
+/*---------------------------
+Daily codewars Jan 2
 ---------------------------*/
