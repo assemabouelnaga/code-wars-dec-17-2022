@@ -843,3 +843,49 @@ function exclamationRemover(string){
 /*---------------------------
 Daily codewars Jan 2
 ---------------------------*/
+
+// Alan Partridge II - Apple Turnover
+function apple(x){
+    return Math.pow(x,2) > 1000? 'It\'s hotter than the sun!!' : 'Help yourself to a honeycomb Yorkie for the glovebox.'
+}
+
+//Grasshopper - Terminal game combat function
+
+function combat(health, damage) {
+    return (health - damage) < 0 ? 0 : health - damage
+}
+
+//Exclamation marks series #11: replace all vowel to exclamationn mark in the sentence
+
+function replace(s){
+    return s.replaceAll(/[aeoiuAEIOU]/g, '!')  
+}
+
+//can also do s.replace([aeiou]/ig,'!')
+
+
+//No zeros for heros
+
+function noZeroes(num){
+    return +num.toString().replace(/0*$/, '')
+}
+
+//String cleaning
+
+function stringClear(str){
+    return str.replace(/[0-9]/g, '')
+}
+
+
+/*---------------------------
+Daily codewars Jan 3
+---------------------------*/
+
+//Simple validation of a username with regex
+
+function validateUsr(username) {
+    let res = new RegExp('^[a-z0-9_]{4-16}$')
+    return res.match(user)
+}
+
+//start with above
