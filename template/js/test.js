@@ -888,4 +888,26 @@ function validateUsr(username) {
     return res.match(user)
 }
 
-//start with above
+//fix the above
+
+//Pre-fizzbuzz workout #1
+
+function preFizz(n) {
+    let start = 1
+    return Array(n).fill(1).map(e => e = start++)
+}
+
+//Sleigh Authentication
+
+function Sleigh() {}
+
+Sleigh.prototype.authenticate = function(name, password) {
+  if(name == 'Santa Claus' && password == 'Ho Ho Ho!'){return true}
+  else return false
+}; //simplify this to just return name == etc. && password ...
+
+//
+
+/*---------------------------
+Daily codewars Jan 4
+---------------------------*/
