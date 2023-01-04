@@ -906,8 +906,56 @@ Sleigh.prototype.authenticate = function(name, password) {
   else return false
 }; //simplify this to just return name == etc. && password ...
 
-//
+
 
 /*---------------------------
 Daily codewars Jan 4
+---------------------------*/
+
+//printing array elements with comma delimiters
+
+function printArrayCommas(array){
+    return array.join(',');
+}
+
+//Determine offspring sex based on genes XX and XY chromosomes
+
+function chromosomeCheck(sperm){
+    return sperm == 'XY' ? "Congratulations! You're going to have a son." : "Congratulations! You're going to have a daughter."
+}
+
+//Reversing words in a string
+
+function reverse(string){
+    return string.split(' ').reverse().join(' ')
+}
+
+//L1: Bartender, drinks!
+
+function getDrinkByParam(param){
+    let name = param.toLowerCase()
+    switch(name){
+        case 'jabroni': return 'Patron Tequila';
+              break;
+        case 'school counselor': return 'Anything with Alcohol';
+              break;
+        case 'programmer': return 'Hipster Craft Been';
+              break;
+        case 'bike gang member': return 'Moonshine';
+              break;
+        case 'politician': return 'Your tax dollars';
+              break;
+        case 'rapper': return 'Cristal';
+              break;
+        default: return 'Beer'
+    }
+}
+
+// Enumerable Magic - does my list include this?
+function include(arr, item){
+    return arr.includes(item)
+}
+
+/*---------------------------
+Daily codewars Jan 5
 ---------------------------*/
