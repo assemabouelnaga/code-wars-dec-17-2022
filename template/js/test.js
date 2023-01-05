@@ -959,3 +959,71 @@ function include(arr, item){
 /*---------------------------
 Daily codewars Jan 5
 ---------------------------*/
+
+//Welcome To the city 
+
+function sayHelloNameCityState( name, city, state ) {
+    return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+}
+
+//Basic training: add item to an array
+
+websites.push('codewars')
+
+//sum of differences in an array
+
+function sumDiffInArray(arr){
+    let total = 0;
+    arr.sort((a,b) => b-a).forEach((e,i) => {
+        total += (arr[i] - arr[i+1]) || 0
+    });
+    return total
+}//try not to tunnel as can easily use Math.max(...arr) - Math.min(...arr)
+
+
+//find the position!
+
+function position(letter){
+    let alphabet = {
+      a:1,
+      b:2,
+      c:3,
+      d:4,
+      e:5,
+      f:6,
+      g:7,
+      h:8,
+      i:9,
+      j:10,
+      k:11,
+      l:12,
+      m:13,
+      n:14,
+      o:15,
+      p:16,
+      q:17,
+      r:18,
+      s:19,
+      t:20,
+      u:21,
+      v:22,
+      w:23,
+      x:24,
+      y:25,
+      z:26,
+    }
+    return 'Position of alphabet: ' + alphabet[letter]
+}//use a string and indexOf instead or charCodeAt() -96
+
+
+//kata example twist
+
+let websites = []
+for(let i=1; i <= 1000; i++){
+    websites.push('codewars')
+}
+
+
+/*---------------------------
+Daily codewars Jan 6
+---------------------------*/
