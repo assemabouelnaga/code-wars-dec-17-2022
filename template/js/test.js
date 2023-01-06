@@ -1027,3 +1027,59 @@ for(let i=1; i <= 1000; i++){
 /*---------------------------
 Daily codewars Jan 6
 ---------------------------*/
+
+//multiple of index
+
+function multipleOfIndex(array) {
+    return array.filter((e,i) => e % i == 0)
+}
+
+//How old will i be in 2099?
+
+function  calculateAge(b,c) {
+    let ageDiff = Math.abs(b-c)
+    if(ageDiff == 1 && b < c){return 'You are 1 year old.' }
+    else if(ageDiff == 1 && b > c) {return 'You will be born in 1 year.'}
+    else if(b == c){
+      return 'You were born this very year!'
+    }else if (b < c){
+      return `You are ${ageDiff} years old.`
+    }else if (b > c){
+      return `You will be born in ${ageDiff} years.`
+    }
+}
+  
+//grasshopper - array mean
+function findAverage(){
+    return nums.reduce((acc,c) => acc + c, 0)/nums.length
+}
+
+
+//add length
+
+function addTheLength(str){
+    let anArray = [];
+    str.split(' ').forEach(e =>{
+        anArray.push(`${e} ${e.length}`)
+    });
+    return anArray
+}//dont be afraid to use the map function instead :)
+
+
+//return the day
+function whatday(num) { 
+    let daysOfWeek = {
+          1: 'Sunday',
+          2: 'Monday',
+          3: 'Tuesday',
+          4: 'Wednesday',
+          5: 'Thursday',
+          6: 'Friday',
+          7: 'Saturday',
+      }
+      return (num <= 7 && num > 0) ? `${daysOfWeek[num]}` : 'Wrong, please enter a number between 1 and 7'
+}// wanted and should use return daysOfWeek[num] || ... //instead of tertiary 
+
+/*---------------------------
+Daily codewars Jan 7
+---------------------------*/
