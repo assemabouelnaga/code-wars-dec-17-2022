@@ -1083,3 +1083,49 @@ function whatday(num) {
 /*---------------------------
 Daily codewars Jan 7
 ---------------------------*/
+
+//color ghost
+
+let Ghost = function() {
+    let decider = Math.floor(Math.random()*4)
+    this.color = decider == 0 ? 'white' : 
+    decider == 1 ? 'yellow' : decider == 2 ? 'purple' : 'red'
+};
+//much better to use an array holding the values and set this.color = array[math...]
+  
+
+//pillars
+
+function pillars(n, d, w) {
+    d *= 100;
+    return n == 1 ? 0 : d * (n-1) + w * n - 2 * w
+}
+
+//define a card suit
+
+function defineSuit(card) {
+    return card.includes('♣') ? 'clubs' :
+    card.includes('♠') ? 'spades' :
+    card.includes('♥') ? 'hearts' :
+    card.includes('♦') ? 'diamonds' : 'bullocks'
+}//was going to use an object.. next time.. 
+
+
+//Mr.Freeze 
+Object.freeze(MrFreeze)
+//this is how to prevent changes to an object
+
+//Name on billboard
+
+function billboard(name, price = 30){
+    let cost = 0;
+    for(let i=0; i<name.length;i++){
+        cost += price
+    }
+    return cost
+} 
+
+
+/*---------------------------
+Daily codewars Jan 8
+---------------------------*/
