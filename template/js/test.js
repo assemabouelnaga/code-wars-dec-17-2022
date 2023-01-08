@@ -1129,3 +1129,39 @@ function billboard(name, price = 30){
 /*---------------------------
 Daily codewars Jan 8
 ---------------------------*/
+
+//no Loops 2 = you only need one
+
+function noLoop(arr,val){
+    return arr.indexOf(val) != -1
+}
+
+//Exclamation marks series #6: remove n exclamation marks in the sentence from left ro right
+function removeExclamationMarks(str,num){
+    for(let i=1; i <= num ; i++){
+        str = str.replace(/!/, '')
+    }
+    return str
+}
+
+//Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string
+function remove (string) {
+    return string.replace(/!/g,'') + '!';  
+}
+
+//compare within margin
+
+function closeCompare(a, b, margin=0){
+    return Math.abs(a-b) <= margin ? 0 : a < b ? -1 : 1
+}
+
+//leonardo dicaprio and oscars
+
+function leo(oscar){
+    return oscar == 88 ? 'Leo finally won the oscar! Leo is happy' : oscar == 86 ? 'Not even for Wolf of wallstreet?!' : oscar <= 85 ? 'When will you give Leo an Oscar?' : 'Leo got one already!'
+}
+
+
+/*---------------------------
+Daily codewars Jan 9
+---------------------------*/
