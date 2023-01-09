@@ -1165,3 +1165,40 @@ function leo(oscar){
 /*---------------------------
 Daily codewars Jan 9
 ---------------------------*/
+
+//is in divisible by x and y?
+
+function isDivisible(n, x, y) {
+    return (n % x == 0 && n % y == 0)
+}
+
+//jenny's secret message
+
+function greet(name){
+    if(name === "Johnny")
+      return "Hello, my love!";
+    return "Hello, " + name + "!";
+}
+
+//reversed words
+
+function reverseWords(str){
+    return str.split(' ').reverse().join(' ')
+}
+
+
+//get the mean of an array
+
+function getAverage(marks){
+    return Math.floor(marks.reduce((acc,c) => acc + c,0)/marks.length)
+}
+
+//Count the Monkeys!
+function countMonkeys(n){
+    return Array(n).fill(0).map((e,i) => n--).reverse()
+}
+//can also use Array.from({length:n}, (e,i) => i+1)
+
+/*---------------------------
+Daily codewars Jan 10
+---------------------------*/
