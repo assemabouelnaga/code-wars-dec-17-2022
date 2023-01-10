@@ -1202,3 +1202,82 @@ function countMonkeys(n){
 /*---------------------------
 Daily codewars Jan 10
 ---------------------------*/
+
+//Do i get a bonus
+
+function bonusTime(salary, bonus) {
+    return '£'+ (bonus ? salary * 10 : salary)
+}
+
+//get planet name by id
+
+function getPlanetName(id){
+    var name;
+    switch(id){
+      case 1:
+        name = 'Mercury'
+        break;
+      case 2:
+        name = 'Venus'
+        break;
+      case 3:
+        name = 'Earth'
+        break;
+      case 4:
+        name = 'Mars'
+        break;
+      case 5:
+        name = 'Jupiter'
+        break;
+      case 6:
+        name = 'Saturn'
+        break;
+      case 7:
+        name = 'Uranus'
+        break;
+      case 8:
+        name = 'Neptune'
+    }
+    
+    return name;
+}
+
+//basic variable assignment
+
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
+
+//count odd numbers below n
+
+function oddCount(n){
+    return Math.floor(n/2)
+}
+
+//short long short
+function shortLongShort(in1,in2){
+    if(in1.length < in2.length){
+        return in1 + in2 + in1
+    }else if(in2.length < in1.length){
+        return in2 + in1 + in2
+    }
+}
+//unfinished loop - bug fixing #1
+function createArray(number){
+    var newArray = [];
+    
+    for(var counter = 1; counter <= number; counter++){
+      newArray.push(counter);
+    }
+    
+    return newArray;
+}
+
+//my head is at the wrong end!
+function tailBodyHead(arr){
+    return arr.reverse()
+}
+
+/*---------------------------
+Daily codewars Jan 11
+---------------------------*/
