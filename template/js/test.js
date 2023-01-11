@@ -1281,3 +1281,47 @@ function tailBodyHead(arr){
 /*---------------------------
 Daily codewars Jan 11
 ---------------------------*/
+
+//find numbers which are divisible by given number
+function divisibleBy(numbers, divisor){
+    return numbers.filter((e,i) => e % divisor == 0)
+}
+
+//capitalization and mutability
+function capitalizeWord(word) {
+    return word[0].toUpperCase() + word.slice(1);
+}
+
+//grasshopper - if/else syntax debug
+
+function checkAlive (health) {
+    if (health <= 0) {
+      return false
+    } else {
+      return true
+    }
+}//alt just return health > 0
+
+//get Nth even number
+
+function nThEvenNumber(num){
+    return 2 * n - 2
+}
+
+//stringy strings
+
+function stringyString(size){
+    let strang = "";
+    for(let i = 1; i <= size; i++){
+        if(i % 2 != 0) {
+            strang +=1
+        } else {
+            strang +=0
+        }
+    }
+}
+
+
+/*---------------------------
+Daily codewars Jan 12
+---------------------------*/
