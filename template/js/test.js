@@ -1325,3 +1325,71 @@ function stringyString(size){
 /*---------------------------
 Daily codewars Jan 12
 ---------------------------*/
+
+//fixme: replace all dots
+
+var replaceDots = function(str) {
+    return str.replace(/\./g, '-');
+}
+
+
+//to square(root) or not to square(root)
+
+function squareOrSquareRoot(array) {
+    let newArr = [];
+    array.forEach((e,i) => {
+      if(Math.sqrt(e) % 1 == 0){
+        newArr.push(Math.sqrt(e))
+      }else{
+        newArr.push(Math.pow(e,2))
+      }
+    })
+    return newArr
+}/*can also use Number.isInteger in the following method
+function squareOrSquareRoot(array) {
+  return array.map(x => {
+    const n = Math.sqrt(x)
+    return Number.isInteger(n) ? n : x * x
+  })
+}*/
+
+//generate range of integers
+
+function generateRange(a,z,n){
+    let newArr =[];
+    for(let i = a; i <= z; i += n){
+        newArr.push(i)
+    }
+    return newArr
+}
+
+//is this my tail?
+
+function correctTail(body, tail) { 
+  
+    let sub = body.substr(body.length-(tail.length));
+    
+    if(sub == tail) {
+      return true
+    }
+    return false;
+}
+
+//grasshopper -debug
+
+function weatherInfo (temp){
+    var c = convertToCelsius(temp)
+    if (c <= 0)
+      return (c + " is freezing temperature")
+    else
+      return (c + " is above freezing temperature")
+}
+  
+function convertToCelsius(temperature){
+    var celsius = (temperature - 32) * (5/9)
+    return celsius
+}
+
+/*---------------------------
+Daily codewars Jan 13
+---------------------------*/
