@@ -1393,3 +1393,50 @@ function convertToCelsius(temperature){
 /*---------------------------
 Daily codewars Jan 13
 ---------------------------*/
+
+//dollars and cents
+
+function dollarsAndCents(num){
+    num = num.toString()
+    console.log(num.includes('.'))
+    console.log(num.charAt(num.length-2))
+    if(num.includes('.') == false){
+        return '$' + num + '.00';
+    }else if(num.charAt(num.length-2) == '.'){
+        return '$' + num + '0';
+    }else{
+        return '$' + num;
+    }
+}//use this method: amount.toFixed(2) will add necessary zeroes to make it two decimals
+
+
+//simple fun #1: seats in theater
+function seatsInTheater(nCols, nRows, col, row) {
+    return ((nCols - col +1) * (nRows - row))
+    
+}
+
+//swap values
+function swapValues(arr) {
+    var args = Array.prototype.slice.call(arguments);
+    var temp = arr[0];
+    arr[0] = arr[1];
+    arr[1] = temp;
+}
+
+//string templates- bug fixing #5
+function buildString(...template){
+    return `I like ${template.join(', ')}!`;
+}
+
+//USD => CNY
+
+function usdcny(usd) {
+    let conversion = usd * 6.75;
+    return conversion.toFixed(2) + ' Chinese Yuan'
+}
+
+
+/*---------------------------
+Daily codewars Jan 14
+---------------------------*/
