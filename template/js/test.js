@@ -1440,3 +1440,54 @@ function usdcny(usd) {
 /*---------------------------
 Daily codewars Jan 14
 ---------------------------*/
+
+//crash override
+
+function aliasGen(first,last){
+  
+    first = first.toUpperCase()
+    last = last.toUpperCase()
+    
+
+      if(first.charAt(0) == +first.charAt(0) || last.charAt(0) == +last.charAt(0)){
+        return "Your name must start with a letter from A - Z."
+      }else{
+        return firstName[first.charAt(0)] + ' ' + surname[last.charAt(0)]
+      }
+}
+
+//remove first and last character part two
+
+function array(arr){
+    let newArr = arr.split(',')
+    if(newArr.length < 3){return null}
+      newArr.shift()
+      newArr.pop()
+      return newArr.join(' ')
+  
+}//use .slice(1,-1) and || null
+  
+//Formatting decimal places #0
+
+function twoDecimalPlaces(n) {
+    return +n.toFixed(2)
+}
+
+//triple trouble
+
+function groupThese(a,b,c){
+    let grouped = ''
+    for(let i = 0; i < 100; i++){
+        grouped += a.charAt(i) + b.charAt(i) + c.charAt(i)
+    }
+}
+
+
+//speedCode #2 - array madness
+function arrayMadness(a, b) {
+    return a.reduce((a,b) => a + b**2,0) > b.reduce((a,b) => a + b**3,0) 
+}
+
+/*---------------------------
+Daily codewars Jan 15
+---------------------------*/
