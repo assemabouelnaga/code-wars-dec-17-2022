@@ -1491,3 +1491,41 @@ function arrayMadness(a, b) {
 /*---------------------------
 Daily codewars Jan 15
 ---------------------------*/
+
+//find the differencec in age between oldest and youngest family members
+
+function differenceInAges(ages){
+    let diff = Math.max(...ages) - Math.min(...ages)
+    return [Math.min(...ages),Math.max(...ages),diff]
+}  
+
+//return to sanity
+
+function mystery() {
+    var results =
+      {sanity: 'Hello'};
+    return results;
+}
+
+//type of sum
+
+function typeOfSum(a, b) {
+    return typeof (a+b)
+}
+
+//incorrect division metjhod
+
+const solve = (x, y) => x / y
+
+//closest elevator
+function elevator(left, right, call){
+    if(Math.abs(call - left) <  Math.abs(call - right)){
+      return 'left'
+    }
+  return 'right'
+}
+
+
+/*---------------------------
+Daily codewars Jan 16
+---------------------------*/
