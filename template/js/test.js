@@ -1529,3 +1529,16 @@ function elevator(left, right, call){
 /*---------------------------
 Daily codewars Jan 16
 ---------------------------*/
+
+//easy logs
+
+function logs(x , a, b){
+    let showYourWork = Math.log(a)/Math.log(x) + Math.log(b)/Math.log(x)
+    return showYourWork
+}
+
+//just one today..
+
+/*---------------------------
+Daily codewars Jan 17
+---------------------------*/
