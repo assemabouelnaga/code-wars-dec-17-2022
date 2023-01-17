@@ -1542,3 +1542,19 @@ function logs(x , a, b){
 /*---------------------------
 Daily codewars Jan 17
 ---------------------------*/
+
+//sum of multiples
+function sumMul(n,m){
+    if(m <=0 || n<=0){
+            return 'INVALID'
+        }
+        let newArr = [];
+        newArr.length = Math.floor(m/n);
+        return newArr.fill(n).map((e,i) => e = e * (i+1)).reduce((a,b) => a+b);
+}
+    
+//also just one today
+
+/*---------------------------
+Daily codewars Jan 18
+---------------------------*/
