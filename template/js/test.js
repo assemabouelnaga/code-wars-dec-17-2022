@@ -1558,3 +1558,70 @@ function sumMul(n,m){
 /*---------------------------
 Daily codewars Jan 18
 ---------------------------*/
+
+//Tip Calculator
+
+function calculateTip(amount, rating) {
+    rating = rating.toLowerCase();
+    let ratings = {
+      terrible:0,
+      poor:.05,
+      good:.1,
+      great:.15,
+      excellent:.2
+    }
+    if(rating in ratings == false){
+      return 'Rating not recognised'
+    }
+    return Math.ceil(amount * ratings[rating])
+}
+
+//are arrow functions odd?
+
+function odds(values){
+    // arrow it
+    return values.filter(e => e%2 != 0 );
+}
+
+//classy classes
+
+class Person {
+    constructor(name,age) {
+      this.name = name
+      this.age = age
+    
+    }
+    get info (){
+      return `${this.name}s age is ${this.age}`
+    }
+}
+
+//simple calculator
+
+function simpleCalc(a,b,op){
+    let operations = {
+        "+": '+',
+        "-": '-',
+        "*": '*',
+        "/": '/'
+
+    }
+    if(typeof a != 'number' || typeof b != 'number' || (op in operations == false)){
+        return 'unknown value'
+    }else{
+        return eval(`${a} ${operations[op]} ${b}`)
+    }
+}//almost had it: put the calculation and return statement in the values of the properties
+//and if operations[op] is false then return unknown value
+
+//fix your code before the garden dies!
+function rainAmount(mm){
+    if(mm < 40){
+         return "You need to give your plant " + (40-mm) + "mm of water"
+    }else{
+         return "Your plant has had more than enough water for today!"
+    };
+}
+/*---------------------------
+Daily codewars Jan 19
+---------------------------*/
