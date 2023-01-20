@@ -1625,3 +1625,90 @@ function rainAmount(mm){
 /*---------------------------
 Daily codewars Jan 19
 ---------------------------*/
+
+// :(
+
+/*---------------------------
+Daily codewars Jan 20
+---------------------------*/
+
+//fundamentals: return
+
+function add(a,b){
+    return a + b
+}
+
+function divide(a,b){
+    return a / b
+}
+
+function multiply(a,b){
+    return a * b
+}
+
+function mod(a,b){
+    return a % b
+}
+   
+function exponent(a,b){
+    return Math.pow(a,b)
+}
+    
+function subt(a,b){
+    return a - b
+}
+
+//training js#8: conditional statement--switch
+
+function howManydays(month){
+    let days;
+    switch (month){
+      case 1:
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12: 
+        days = 31;
+      break;
+      case 4:
+      case 6:
+      case 9:
+      case 11: 
+        days = 30;
+      break;
+      case 2: 
+        days = 28;
+      break;
+      default:
+        days = 'Invalid Month. Enter a number 1 - 12'
+    }
+    return days;
+}
+
+//training js#10: loop statement --for
+
+function pickIt(arr){
+    let odd=[],even=[];
+    //coding here
+    for(let i=0; i<arr.length; i++){
+      if(arr[i] %2 != 0){
+        odd.push(arr[i])
+      }else{
+        even.push(arr[i])
+      }
+    }
+    
+    return [odd,even];
+}//make use of for (let variableName of arr)... and tertiary
+
+//training js#6: basic data types--boolean and conditional statements if..else
+
+function trueOrFalse(val){
+    return val ? 'true' : 'false'
+}
+
+/*---------------------------
+Daily codewars Jan 21
+---------------------------*/
