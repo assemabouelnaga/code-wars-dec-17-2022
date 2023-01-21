@@ -1712,3 +1712,18 @@ function trueOrFalse(val){
 /*---------------------------
 Daily codewars Jan 21
 ---------------------------*/
+
+//remove the time
+function shortenToDate(longDate) {
+    let shortDate = longDate.split(',');
+    return shortDate[0]
+}
+
+//parse float
+function parseF(s){
+    return isNaN(parseFloat(s)) ? null : parseFloat(s)
+}
+
+/*---------------------------
+Daily codewars Jan 22
+---------------------------*/
