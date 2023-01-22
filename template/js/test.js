@@ -1727,3 +1727,14 @@ function parseF(s){
 /*---------------------------
 Daily codewars Jan 22
 ---------------------------*/
+
+//vowel count
+
+function getCount(str) {
+    let newStr = str.replace(/[aeiou]/g,'7')
+    return newStr.split('').filter(e => e == 7).length
+}
+
+/*---------------------------
+Daily codewars Jan 23
+---------------------------*/
