@@ -1738,3 +1738,42 @@ function getCount(str) {
 /*---------------------------
 Daily codewars Jan 23
 ---------------------------*/
+
+//Disemvowel Trolls
+
+function disemvowel(str) {
+    return str.replace(/[aeiouAEIOU]/g,'');
+}//use gi for global and case insensitive
+
+//digit*digit
+
+function squareDigits(num){
+    return +num.toString().split('').map(e => Math.pow(+e,2)).join('')
+}
+
+//highest and lowest
+
+function highlow(nums){
+    let arr = nums.split(' ')
+    return `${Math.max(...arr)} ${Math.min(...arr)}`
+}
+
+//you're a square!
+
+let isSquare = function(n){
+    return Number.isInteger(Math.sqrt(n)); 
+}
+
+//
+
+function middleChar(str){
+    if(str.length % 2 != 0){
+        return str.charAt(str.length/2)
+    }else{
+        return str.charAt(str.length/2 - 1)+ str.charAt(str.length/2)  
+    }
+}
+
+/*---------------------------
+Daily codewars Jan 24
+---------------------------*/
