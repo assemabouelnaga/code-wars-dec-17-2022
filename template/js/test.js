@@ -1777,3 +1777,44 @@ function middleChar(str){
 /*---------------------------
 Daily codewars Jan 24
 ---------------------------*/
+
+// list filtering
+
+function filter_list(l) {
+    return l.filter(e => typeof e == 'number')
+}
+
+//Jaden casing string
+
+String.prototype.toJadenCase = function () {
+    return this.split(' ').map(e => e[0].toUpperCase() + e.slice(1)).join(' ')
+};
+
+//shortest word
+
+function findShort(s){
+    let newArr = s.split(' ').map(e => e.length)
+      return Math.min(...newArr)
+}//can use the .apply
+
+//Complementary DNA
+
+function DNAStrand(dna){
+    let first = dna.replace(/A/g,'1')
+    let second = first.replace(/G/g,'2')
+    let third = second.replace(/T/g, '3')
+    let fourth = third.replace(/C/g, '4')
+    let fifth = fourth.replace(/1/g,'T')
+    let sixth = fifth.replace(/2/g,'C')
+    let seventh = sixth.replace(/3/g,'A')
+    let eigth = seventh.replace(/4/g,'G')
+  
+    return eigth
+}
+console.log(DNAStrand('AATTCG'))
+//redo this to be DRY
+
+
+/*---------------------------
+Daily codewars Jan 25
+---------------------------*/
