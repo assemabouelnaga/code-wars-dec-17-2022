@@ -1818,3 +1818,34 @@ console.log(DNAStrand('AATTCG'))
 /*---------------------------
 Daily codewars Jan 25
 ---------------------------*/
+
+//sum of two lowest positive integers
+
+function sumTwoLowest(numbers){
+    numbers.sort((a,b) => a - b)
+    return numbers[0] + numbers[1]
+}
+
+//beginner series #3 Sum of numbers
+
+
+function betweenTwoNums(a,b){
+    if(a == b){
+        return a
+    }
+    let sum = 0;
+    for(let i = Math.min(a,b); i <= Math.max(a,b); i++){
+        sum += i
+    }
+    return sum
+}
+
+//credit card mask
+
+function maskify(str){
+    return str.slice(0,-4).replace(/[a-z0-9]/gi,'#') + str.slice(-4)
+}
+
+/*---------------------------
+Daily codewars Jan 26
+---------------------------*/
