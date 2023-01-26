@@ -1849,3 +1849,35 @@ function maskify(str){
 /*---------------------------
 Daily codewars Jan 26
 ---------------------------*/
+
+//firend or foe?
+
+function friend(friends){
+    return friends.filter(e => e.length == 4)
+}
+
+//growth of a population
+
+function nbYear(p0, percent, aug, p) {
+    let newPop = p0;
+    let years = 0;
+    let g = percent/100
+    do{
+      newPop += Math.floor(newPop * g + aug);
+      years += 1;
+  
+    }while (newPop < p)
+    
+    return years
+}//try this again with a for loop as i had originally intended
+
+//binary addition
+
+function addBinary(a,b) {
+    let sum = a + b;
+    return sum.toString(2)
+}
+
+/*---------------------------
+Daily codewars Jan 27
+---------------------------*/
