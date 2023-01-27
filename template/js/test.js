@@ -1881,3 +1881,20 @@ function addBinary(a,b) {
 /*---------------------------
 Daily codewars Jan 27
 ---------------------------*/
+
+//Two to One
+function longest(s1, s2) {
+    return [...new Set(s1.concat(s2))].sort((a,b) => a.localeCompare(b)).join('')
+}
+
+//regex validate PIN code
+function validatePIN (pin) {
+    let reggie1 = /^\d{4}/
+    let reggie2 = /^\d{6}/
+    return reggie1.test(pin) && pin.length == 4 || reggie2.test(pin) && pin.length == 6 
+}//refactor using ^ and $ 
+
+
+/*---------------------------
+Daily codewars Jan 27
+---------------------------*/
