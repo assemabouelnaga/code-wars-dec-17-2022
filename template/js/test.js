@@ -1896,5 +1896,20 @@ function validatePIN (pin) {
 
 
 /*---------------------------
-Daily codewars Jan 27
+Daily codewars Jan 29
+---------------------------*/
+
+//categorize New member
+
+function openOrSenior(data){
+  let output = [];
+  data.forEach(e => {
+     e[0] >= 55 && e[1] > 7 ? output.push('Senior') : output.push('Open')
+  });
+  return output
+} 
+
+
+/*---------------------------
+Daily codewars Jan 30
 ---------------------------*/
