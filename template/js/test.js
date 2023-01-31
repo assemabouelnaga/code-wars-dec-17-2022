@@ -1925,3 +1925,20 @@ function oddOrEven(array) {
 /*---------------------------
 Daily codewars Jan 31
 ---------------------------*/
+
+//make a function that does arithmetic!
+
+function arithmetic(a, b, operator){
+    let operation = {
+      'add': a + b,
+      'subtract': a - b,
+      'multiply': a * b,
+      'divide': a / b,
+    }
+    return operation[operator]
+}
+
+
+/*---------------------------
+Daily codewars Feb 1
+---------------------------*/
