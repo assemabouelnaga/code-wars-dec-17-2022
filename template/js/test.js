@@ -1942,3 +1942,20 @@ function arithmetic(a, b, operator){
 /*---------------------------
 Daily codewars Feb 1
 ---------------------------*/
+
+//break
+
+/*---------------------------
+Daily codewars Feb 2
+---------------------------*/
+
+//remove anchor from URL
+
+function removeAnchor(str){
+    return str.replace(/#.+/, '')
+}
+
+
+/*---------------------------
+Daily codewars Feb 3
+---------------------------*/
