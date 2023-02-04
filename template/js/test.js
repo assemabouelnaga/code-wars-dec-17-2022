@@ -1940,12 +1940,6 @@ function arithmetic(a, b, operator){
 
 
 /*---------------------------
-Daily codewars Feb 1
----------------------------*/
-
-//break
-
-/*---------------------------
 Daily codewars Feb 2
 ---------------------------*/
 
@@ -1957,5 +1951,21 @@ function removeAnchor(str){
 
 
 /*---------------------------
-Daily codewars Feb 3
+Daily codewars Feb 4
+---------------------------*/
+
+//Find the stray number
+
+function strayNum(arr){
+    let numb;
+    arr.forEach((e,i) => {
+        if(arr.filter((ele,ind) => ele == e  ).length == 1){
+            numb = e;
+        }
+    })
+    return numb
+}
+
+/*---------------------------
+Daily codewars Feb 5
 ---------------------------*/
