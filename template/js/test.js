@@ -1982,3 +1982,18 @@ const binaryArrayToNumber = arr => {
       }
       return sum
 };
+
+
+/*---------------------------
+Daily codewars Feb 6
+---------------------------*/
+
+//push a hash/an object into array
+
+items = []
+items.push({a: "b", c: "d"})
+
+
+/*---------------------------
+Daily codewars Feb 7
+---------------------------*/
