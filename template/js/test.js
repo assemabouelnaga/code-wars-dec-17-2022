@@ -1997,3 +1997,11 @@ items.push({a: "b", c: "d"})
 /*---------------------------
 Daily codewars Feb 7
 ---------------------------*/
+
+//isograms
+
+function isIsogram(str){
+    let bob = str.toLowerCase()
+   let truth = [...new Set(bob.split(''))].join('')
+      return truth == bob
+}
