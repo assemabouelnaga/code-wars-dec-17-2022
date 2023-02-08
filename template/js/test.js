@@ -2005,3 +2005,18 @@ function isIsogram(str){
    let truth = [...new Set(bob.split(''))].join('')
       return truth == bob
 }
+
+/*---------------------------
+Daily codewars Feb 8
+---------------------------*/
+
+//exes and ohs
+
+function XO(str) {
+    str = str.toLowerCase();
+    return str.split('').filter(e => e == 'x').length == str.split('').filter(e => e == 'o').length
+}//can use str.match as well
+
+/*---------------------------
+Daily codewars Feb 9
+---------------------------*/
