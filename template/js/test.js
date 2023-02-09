@@ -2020,3 +2020,18 @@ function XO(str) {
 /*---------------------------
 Daily codewars Feb 9
 ---------------------------*/
+
+//string ends with?
+
+function solution(str, ending){
+    if(ending == false){
+        return true
+    }
+    let num = ending.length
+    return str.slice(-num) == ending
+}// use .endsWith
+
+
+/*---------------------------
+Daily codewars Feb 10
+---------------------------*/
