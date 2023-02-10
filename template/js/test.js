@@ -2035,3 +2035,13 @@ function solution(str, ending){
 /*---------------------------
 Daily codewars Feb 10
 ---------------------------*/
+
+//find the next perfect square!
+
+function findSquare(sq) {
+    if(Number.isInteger(Math.sqrt(sq))){
+        return (Math.sqrt(sq) + 1) * (Math.sqrt(sq) + 1)
+    }
+    return -1;
+}
+
