@@ -2045,3 +2045,17 @@ function findSquare(sq) {
     return -1;
 }
 
+
+/*---------------------------
+Daily codewars Feb 11
+---------------------------*/
+
+//number of people in the bus
+
+let numberOnBus = function(busStops){
+    let totalSleeping = 0;
+    busStops.forEach(e =>{
+      totalSleeping += e[0] - e[1]
+    })
+    return totalSleeping
+}//const number = (busStops) => busStops.reduce((rem, [on, off]) => rem + on - off, 0);
