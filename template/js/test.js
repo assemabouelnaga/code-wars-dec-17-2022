@@ -2081,7 +2081,20 @@ function likes(names) {
     return `${names[0]}, ${names[1]} and ${names.length -2} others like this`
     }
 }
+//redo this to use object oriented programming!
 
 /*---------------------------
-Daily codewars Feb 13
+Daily codewars Feb 14
+---------------------------*/
+
+//sort numbers
+
+function solution(nums){
+    return nums ? nums.sort((a,b) => a -b) : []
+}
+
+
+  
+/*---------------------------
+Daily codewars Feb 15
 ---------------------------*/
